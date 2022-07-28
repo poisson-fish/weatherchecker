@@ -1,8 +1,6 @@
-# codequiz
-A code quiz with HTML5, Bootstrap and JS.
-See the live application [here.](https://udidifier.github.io/codequiz/)
+# weatherchecker
+A simple weather applet using Bootstrap, Webpack, and the [OpenWeatherMap OneCall API 3.0](https://openweathermap.org/api/one-call-3)
+See the live application [here.](https://udidifier.github.io/weatherchecker/)
 
 
-![Image 1](https://github.com/udidifier/codequiz/blob/master/images/1.png?raw=true)
-![Image 2](https://github.com/udidifier/codequiz/blob/master/images/2.png?raw=true)
-![Image 3](https://github.com/udidifier/codequiz/blob/master/images/3.png?raw=true)
+![Image 1](https://github.com/udidifier/weatherchecker/blob/master/images/screen1.png?raw=true)
