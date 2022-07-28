@@ -56,36 +56,36 @@ l111 52 33 -81 c182 -454 580 -785 1070 -892 130 -29 470 -27 596 3 279 68
             <hr>
             <div class="container themed-container">
               <div class="d-grid gap-2">
-                <button class="btn btn-outline-dark" type="button">Austin</button>
-                <button class="btn btn-outline-dark" type="button">Chicago</button>
-                <button class="btn btn-outline-dark" type="button">New York</button>
-                <button class="btn btn-outline-dark" type="button">Orlando</button>
-                <button class="btn btn-outline-dark" type="button">San Francisco</button>
-                <button class="btn btn-outline-dark" type="button">Seattle</button>
-                <button class="btn btn-outline-dark" type="button">Denver</button>
-                <button class="btn btn-outline-dark" type="button">Atlanta</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(78701)">Austin</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(60632)">Chicago</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(11379)">New York</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(32801)">Orlando</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(94117)">San Francisco</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(98104)">Seattle</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(80207)">Denver</button>
+                <button class="btn btn-outline-dark" type="button" onclick="doSearch(30332)">Atlanta</button>
               </div>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-8 invisible" id="dataContainer">
             <div class="container themed-container">
               <div class="container themed-container">
                 <ul class="list-group text-start">
-                  <h3>City Name</h3>
-                  <li class="list-group-item">Temperature:</li>
-                  <li class="list-group-item">Wind:</li>
-                  <li class="list-group-item">Humidity:</li>
-                  <li class="list-group-item">UV Index:</li>
+                  <h3 id="todayName">City Name</h3>
+                  <li id="todayTemp" class="list-group-item">Temp:</li>
+                  <li id="todayWind" class="list-group-item">Wind:</li>
+                  <li id="todayHumid" class="list-group-item">Humidity:</li>
+                  <li id="todayUV" class="list-group-item">UV Index:</li>
                 </ul>
               </div>
               <hr>
               <div class="container themed-container text-center">
 
                 <div class="col">
-                  <div class="row mx-auto m-0 p-0">
+                  <div class="row mx-auto m-0 p-0" id="cardList">
 
                     
-                    <div class="col-md-3 m-0 p-0">
+                    <div class="col-md-3 m-0 p-1">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">07/28/2022</h5>
@@ -97,7 +97,7 @@ l111 52 33 -81 c182 -454 580 -785 1070 -892 130 -29 470 -27 596 3 279 68
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-3 m-0 p-0">
+                    <div class="col-md-3 m-0 p-1">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">07/28/2022</h5>
@@ -109,7 +109,7 @@ l111 52 33 -81 c182 -454 580 -785 1070 -892 130 -29 470 -27 596 3 279 68
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-3 m-0 p-0">
+                    <div class="col-md-3 m-0 p-1">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">07/28/2022</h5>
@@ -121,7 +121,7 @@ l111 52 33 -81 c182 -454 580 -785 1070 -892 130 -29 470 -27 596 3 279 68
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-3 m-0 p-0">
+                    <div class="col-md-3 m-0 p-1">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">07/28/2022</h5>
@@ -133,7 +133,7 @@ l111 52 33 -81 c182 -454 580 -785 1070 -892 130 -29 470 -27 596 3 279 68
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-3 m-0 p-0">
+                    <div class="col-md-3 m-0 p-1">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">07/28/2022</h5>
@@ -145,9 +145,6 @@ l111 52 33 -81 c182 -454 580 -785 1070 -892 130 -29 470 -27 596 3 279 68
                         </div>
                       </div>
                     </div>
-                    
-                    
-                    
 
 
                   </div>
