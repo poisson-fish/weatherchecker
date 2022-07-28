@@ -3522,7 +3522,7 @@ function updateCityWeather (city, weather) {
 }
 
 function doSearch (city) {
-  axios__WEBPACK_IMPORTED_MODULE_2___default().get(`http://api.openweathermap.org/geo/1.0/zip?zip=${city},US&appid=${apiKey}`)
+  axios__WEBPACK_IMPORTED_MODULE_2___default().get(`https://api.openweathermap.org/geo/1.0/zip?zip=${city},US&appid=${apiKey}`)
     .then(function (response) {
       // should have coordinates
       const coords = response.data
