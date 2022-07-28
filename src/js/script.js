@@ -47,7 +47,7 @@ function updateCityWeather (city, weather) {
                       <div class="card">
                       <h5 class="card-title">${date.format('MM/DD/YYYY')}</h5>
                       <div class="col">
-                        <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" style="width: 64px; height: 64px;" class="card-img-top" alt="Weather Icon">
+                        <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" style="width: 64px; height: 64px;" class="card-img-top" alt="Weather Icon">
                       </div>
                         <div class="card-body">
                           <ul class="list-group text-start">
